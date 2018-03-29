@@ -4,6 +4,7 @@
 		<meta charset="utf-8" />
 		<title>我的网页</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="//at.alicdn.com/t/font_610488_6e13r4a7glxflxr.js"></script>
 	</head>
 	<body>
 		<div class="topNavBar clearfix">
@@ -24,35 +25,55 @@
 				</ul>
 			</nav>
 		</div>	
-		<div class="banner" style="background-image: url(#);">
+		<div class="banner">
+			<div class="mask">
+			</div>
 		</div>
 		<main>
-			<div id="card">				
-				<div class="">
-					<img src="" alt="头像"/>
-				</div>
-				<div class="text">
-					<span class="welcome">Hello</span>
-					<h1>陈枫</h1>
-					<p>前端开发工程师</p>
-					<hr>
-					<dl>
-						<dt>年龄</dt>
-						<dd>18</dd>
-						<dt>所在城市</dt>
-						<dd>杭州</dd>
-						<dt>E-mail</dt>
-						<dd>112124124@qq.com</dd>
-						<dt>电话</dt>
-						<dd>183571045532</dd>
-					</dl>			
-				</div>	
+			<div class="userCard">	
+				<div class="userCardAndText clearfix">
+					<div class="picture">
+						<img src="img/avatar.jpg" alt="头像"/>
+					</div>
+					<div class="text">
+						<span class="welcome">Hello<span class="triangle"></span></span>
+						<h1>陈枫</h1>
+						<p>前端开发工程师</p>
+						<hr>
+						<dl>
+							<dt>年龄</dt>
+							<dd>18</dd>
+							<dt>所在城市</dt>
+							<dd>杭州</dd>
+							<dt>E-mail</dt>
+							<dd>112124124@qq.com</dd>
+							<dt>电话</dt>
+							<dd>183571045532</dd>
+						</dl>
+					</div>	
+				</div>		
+			
 				<footer class="media">
-					<a href=""><img src="#" alt=".."/></a>
-					<a href=""><img src="#" alt=".."/></a>
-					<a href=""><img src="#" alt=".."/></a>
-					<a href=""><img src="#" alt=".."/></a>
-					<a href=""><img src="#" alt=".."/></a>
+					<a href="">
+						<svg class="icon" aria-hidden="true"> 
+							<use xlink:href="#icon-qq"></use>
+						</svg>
+					</a>
+					<a href="">
+						<svg class="icon" aria-hidden="true"> 
+							<use xlink:href="#icon-zhihu"></use>
+						</svg>
+					</a>
+					<a href="">
+						<svg class="icon" aria-hidden="true"> 
+							<use xlink:href="#icon-weibo"></use>
+						</svg>
+					</a>
+					<a href="">
+						<svg class="icon" aria-hidden="true"> 
+							<use xlink:href="#icon-gongzhonghao"></use>
+						</svg>
+					</a>
 				</footer>
 			</div>
 			<a href="#" class="button">下载pdf</a>
