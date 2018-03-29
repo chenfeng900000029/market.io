@@ -1,0 +1,44 @@
+.clearfix::after{
+	content:'';
+	display: block;
+	clear: both;
+}
+*{ margin: 0;
+	padding: 0;}
+a{ color: inherit;}	
+body{ background-color:black;
+		}
+.topNavBar{ margin: 25px 0;}		
+.topNavBar>img{ float: left;}		
+.topNavBar>nav{
+		float: right;
+}
+.topNavBar .logo{
+	font-size: 24px;
+	font-weight:bold;
+	font-family: "arial black";
+	
+}		
+.rs{ color: #E06567;
+		margin-right: 4px;
+		padding: 3px 0 4px 0;
+		margin-left: 16px;
+		}
+.card{ color: #c1bebc;
+		padding: 3px 0 4px 0;
+		}
+.topNavBar>nav>ul>li{ float: left;
+						list-style: none;
+						margin: 0 17px 0 17px;
+						line-height: 30px;
+						}
+.topNavBar>nav>ul>li>a{
+	font-size:12px ;
+	color:#c1bebc;
+	font-weight: bold;
+	text-decoration: none;
+	margin:5px 0  ;
+	display: block;
+}						
+.topNavBar>nav>ul>li>a:hover{ border-bottom:3px #e06567 solid ;}
+
