@@ -5,23 +5,39 @@
 		<title>我的网页</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
 		<script src="//at.alicdn.com/t/font_610488_6e13r4a7glxflxr.js"></script>
+		
 	</head>
 	<body>
-		<div class="topNavBar clearfix">
+		<div id="siteLoading" class="site-loading site-active">
+			<div class="loading"></div>	
+		</div>
+		<div id="topNavBar" class="topNavBar clearfix">
 			<a  href="#" alt="logo" class="logo"/>
 				<span class="rs">RS</span><span class="card">Card</span>
 			</a>
 			<nav class="clearfix">
 				<ul class="clearfix">
-					<li><a href="#">ABOUT</a></li>
-					<li><a href="#">SKILLS</a></li>
-					<li><a href="#">EXPERIENCE</a></li>
-					<li><a href="#">PRICING</a></li>
-					<li><a href="#">BLOG</a></li>
-					<li><a href="#">CALENDAR</a></li>
-					<li><a href="#">CONTACT</a></li>
-					<li><a href="#">OUTER</a></li>
-					<li><a href="#"> ALL DEMOS</a></li>
+					<li><a href="#siteCard">ABOUT</a></li>
+					<li><a href="#siteSkills">SKILLS</a></li>
+					<li class="menuTigger" ><a href="#EX">EXPERIENCE</a>
+						<ul class="subMenu">
+							<li>EXPERIENCE</li>
+							<li>EXPERIENCE</li>
+							<li>EXPERIENCE</li>
+						</ul>
+					</li>
+					<li class="menuTigger"><a  href="#PR">PRICING</a>
+						<ul class="subMenu">
+							<li>PRICING</li>
+							<li>PRICING</li>
+							<li>PRICING</li>
+						</ul>
+					</li>
+					<li><a href="#BL">BLOG</a></li>
+					<li><a href="#siteCalendar">CALENDAR</a></li>
+					<li><a href="#CO">CONTACT</a></li>
+					<li><a href="#OU">OUTER</a></li>
+					<li><a href="#AL"> ALL DEMOS</a></li>
 				</ul>
 			</nav>
 		</div>	
@@ -30,7 +46,7 @@
 			</div>
 		</div>
 		<main>
-			<div class="userCard">	
+			<div data-x id="siteCard" class="userCard">	
 				<div class="userCardAndText clearfix">
 					<div class="picture">
 						<img src="img/avatar.jpg" alt="头像"/>
@@ -84,7 +100,7 @@
 				市民兑换时应注意，钱币破损面积超过1/4不足1/2的可半额兑换，破损面积<br>
 			</p>
 		</main>
-		<section class="skills">
+		<section data-x  id="siteSkills" class="skills">
 			<h2>个人技能</h2>
 			<ol class="clearfix">
 				<li>
@@ -132,7 +148,7 @@
 				</li>
 			</ol>
 		</section>
-		<section class="portfolio">
+		<section data-x  id="EX" class="portfolio">
 			<h2>作品集</h2>
 			<nav>
 				<ol class="clearfix">
@@ -168,5 +184,7 @@
 				</div>
 			</div>
 		</section>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js" ></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</body>
 </html>
