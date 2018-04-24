@@ -2,6 +2,14 @@
 		setTimeout(function(){
 			siteLoading.classList.remove('site-active')
 		},0000)
+		let specialTags=document.querySelectorAll('[data-x]')//  返回这个选择器对应的所有的元素
+			for(var i=0;i<specialTags.length; i++){
+				specialTags[i].classList.add('offset')
+				} 
+		setTimeout(function(){
+			yyy()
+		},1)
+		
 		window.onscroll=function(x){
 		var scrollHeight=window.scrollY
 			
@@ -10,7 +18,11 @@
 			} else{
 				topNavBar.classList.remove('addbar')
 			}
-			console.log(window.scrollY)	
+			//console.log(window.scrollY)	
+			yyy()
+		}
+		
+		function yyy(){
 			let specialTags=document.querySelectorAll('[data-x]')//  返回这个选择器对应的所有的元素
 			let minIndex=0
 			for(var i=1;i<specialTags.length; i++){
@@ -25,6 +37,8 @@
 			}
 			//specialTags[minIndex].classList.add('active')  //添加active
 			
+			//离窗口最近的元素
+			specialTags[minIndex].classList.remove('offset')
 			let id=specialTags[minIndex].id  //获取当前标签ID
 			let a =document.querySelector('a[href="#' + id + '"]')
 			//console.log(a)
@@ -37,6 +51,7 @@
 				li.classList.add('active')
 				
 		}
+		
 		let liTags=document.getElementsByClassName('menuTigger')
 		for (let i=0; i<liTags.length;i++) {
 			liTags[i].onmouseenter=function(x){
