@@ -4,10 +4,13 @@
 		<meta charset="utf-8" />
 		<title>我的网页</title>
 		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/css/swiper.min.css">
 		<script src="//at.alicdn.com/t/font_610488_6e13r4a7glxflxr.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		
 	</head>
 	<body>
+		
 		<div id="siteLoading" class="site-loading site-active">
 			<div class="loading"></div>	
 		</div>
@@ -174,16 +177,39 @@
 			</script>
 			<div class="works" style="height: 597px;">
 				<div class="big" style="top:0; left: 0;">
-					<img src="img/1.jpg"/>
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <img class="swiper-slide "src="img/apple.png">
+				        
+				        <img class="swiper-slide" src="img/record.png">
+				       <img class="swiper-slide" src="img/canvas.png">
+				    </div>
+				</div>
 				</div>
 				<div class="small" style="top:0; left: 640px;">
-					<img src="img/2.jpg"/>
+					<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <img class="swiper-slide "src="img/clound.png">
+				        
+				        <img class="swiper-slide" src="img/clound2.png">
+				       <img class="swiper-slide" src="img/clound3.png">
+				    </div>
+				</div>
 				</div>
 				<div class="small" style="left: 640px; top:312px;">
-					<img src="img/3.jpg"/>
+					<div class="swiper-container">
+				   		 <div class="swiper-wrapper">
+					        <img class="swiper-slide "src="img/blue.png">
+				      		  <img class="swiper-slide" src="img/blue4.png">
+				      		 <img class="swiper-slide" src="img/blue3.png">
+				  		  </div>
+					</div>
 				</div>
 			</div>
 		</section>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.0/js/swiper.min.js"></script>	
+		<script src="js/swiper.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js" ></script>
 		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 	</body>

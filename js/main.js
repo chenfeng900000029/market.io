@@ -1,13 +1,13 @@
 //		siteLoading.classList.remove('site-active')  加载完移除 样式
 		setTimeout(function(){
 			siteLoading.classList.remove('site-active')
-		},0000)
+		},0)
 		let specialTags=document.querySelectorAll('[data-x]')//  返回这个选择器对应的所有的元素
 			for(var i=0;i<specialTags.length; i++){
 				specialTags[i].classList.add('offset')
 				} 
 		setTimeout(function(){
-			yyy()
+			findCloseAndmoveOfset()
 		},1)
 		
 		window.onscroll=function(x){
@@ -19,10 +19,10 @@
 				topNavBar.classList.remove('addbar')
 			}
 			//console.log(window.scrollY)	
-			yyy()
+			findCloseAndmoveOfset()
 		}
 		
-		function yyy(){
+		function findCloseAndmoveOfset(){
 			let specialTags=document.querySelectorAll('[data-x]')//  返回这个选择器对应的所有的元素
 			let minIndex=0
 			for(var i=1;i<specialTags.length; i++){
